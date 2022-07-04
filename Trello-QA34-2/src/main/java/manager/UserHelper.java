@@ -4,7 +4,7 @@ import models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class UserHelper extends HelperBase{
+public class UserHelper extends HelperBase {
     public UserHelper(WebDriver wd) {
         super(wd);
     }
@@ -35,3 +35,13 @@ public class UserHelper extends HelperBase{
         return wd.findElements(By.cssSelector("[data-test-id = 'head-member-menu-button']")).size() > 0;
 
     }
+    public void login(String email, String password){
+        click(By.cssSelector("[href='/login']"));
+        type(By.cssSelector("#user"), email);
+        click(By.cssSelector("#login"));
+        pause(5000);
+        type(By.name("password"), password);
+        click(By.id("login-submit"));
+
+    }
+}

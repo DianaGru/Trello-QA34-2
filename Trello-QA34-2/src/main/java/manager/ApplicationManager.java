@@ -6,12 +6,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class ApplicationManager {
-
     WebDriver wd;
 
     UserHelper user;
     BoardHelper board;
-
 
     public void init() {
         wd = new ChromeDriver();
@@ -20,7 +18,7 @@ public class ApplicationManager {
         wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         user = new UserHelper(wd);
-        board = new BoardHelper(wd);
+        board= new BoardHelper(wd);
         user.login("dianchik2004@gmail.com","Celev1981");
     }
 
