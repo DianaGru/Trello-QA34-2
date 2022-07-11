@@ -1,4 +1,4 @@
-package manager;
+package manage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +19,7 @@ public class ApplicationManager {
 
         user = new UserHelper(wd);
         board= new BoardHelper(wd);
-        user.login("dianchik2004@gmail.com","Celev1981");
+
     }
 
     public void stop() {

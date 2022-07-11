@@ -13,6 +13,13 @@ dependencies {
     implementation 'org.testng:testng:7.6.0'
     implementation 'org.seleniumhq.selenium:selenium-java:4.2.2'
     implementation 'io.github.bonigarcia:webdrivermanager:5.2.0'
+
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.22'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+
 }
 
 test {

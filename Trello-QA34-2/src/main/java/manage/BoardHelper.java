@@ -1,32 +1,28 @@
-package manager;
+package manage;
 
-import models.Board;
+import model.Board;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import javax.swing.*;
-
 public class BoardHelper extends HelperBase{
     public BoardHelper(WebDriver wd) {
         super(wd);
     }
-
     public void initBoardCreationFromHeader() {
         click(By.cssSelector("[data-test-id='header-create-menu-button']"));
-        click(By.cssSelector("[aria-label='BoardIcon']"));//[data-test-id='header-create-board-button']
-
+        click(By.cssSelector("[aria-label='BoardIcon']"));
     }
 
-    public void fillBoardCreationForm(Board board) {
-        type(By.cssSelector("[data-test-id = 'create-board-title-input']"), board.getTitle());
+    public void fillboardCreationForm(Board board) {
+        type(By.cssSelector("[data-test-id='create-board-tile']"),board.getTitle());
     }
 
     public void scrollDownTheForm() {
-        Actions action = new Actions(wd);
-        WebElement container = wd.findElement(By.cssSelector("[data-test-id = 'header-create-menu-popover']"));
+        Actions action= new Actions(wd);
+        WebElement container = wd.findElement(By.cssSelector("[data-test-id='header-create-menu-popover']"));
         Rectangle rect = container.getRect();
         int x = rect.getX()+20;
         int y = rect.getY()+rect.getHeight()/2;
@@ -38,14 +34,14 @@ public class BoardHelper extends HelperBase{
     }
 
     public void returnToHomePage() {
-        click(By.cssSelector("[aria-label='Back to home']"));
+        click(By.cssSelector(".m2N684FcksCyfT"));
     }
 
     public int getBoardCount() {
         return wd.findElements(By.cssSelector(".boards-page-board-section-list-item")).size()-1-recentlyViewedBoards();
     }
-
     public int recentlyViewedBoards(){
-        return wd.findElements(By.xpath("//*[contains(@class,'icon-clock')]/../../..//li")).size();
+        return  wd.findElements(By.xpath("//*[contains(@class,'icon-clock')]/../../..//li")).size();
+
     }
 }

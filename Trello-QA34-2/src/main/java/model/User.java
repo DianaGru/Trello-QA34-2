@@ -1,20 +1,20 @@
-package models;
+package model;
 
 public class User {
-    private String email;
-    private String password;
+    String email;
+    String password;
 
     public String getEmail() {
         return email;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
     public User setEmail(String email) {
         this.email = email;
         return this;
-    }
-
-    public String getPassword() {
-        return password;
     }
 
     public User setPassword(String password) {

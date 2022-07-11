@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.Login" tests="2" skipped="1" failures="1" errors="0" timestamp="2022-07-04T18:43:09" hostname="DESKTOP-B443DO6" time="3.622">
+<testsuite name="tests.BoardCreation" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-07-11T17:24:26" hostname="DESKTOP-B443DO6" time="16.256">
   <properties/>
-  <testcase name="setUp" classname="tests.Login" time="3.57">
-    <failure message="org.openqa.selenium.WebDriverException: unknown error: unexpected command response&#10;  (Session info: chrome=103.0.5060.66)&#10;Build info: version: '4.2.2', revision: '683ccb65d6'&#10;System info: host: 'DESKTOP-B443DO6', ip: '10.0.0.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [1a9059ecc09754ed289b5aea2f3b6897, clickElement {id=a4ad4a36-d1b7-4a5e-9dbc-8573bd8a002c}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Diana\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62218/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (1a9059ecc09754ed289b5aea2f3b6897)] -&gt; css selector: [href='/login']]&#10;Session ID: 1a9059ecc09754ed289b5aea2f3b6897" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.66)
+  <testcase name="boardCreation1" classname="tests.BoardCreation" time="16.256">
+    <failure message="org.openqa.selenium.InvalidElementStateException: invalid element state&#10;  (Session info: chrome=103.0.5060.114)&#10;Build info: version: '4.2.2', revision: '683ccb65d6'&#10;System info: host: 'DESKTOP-B443DO6', ip: '10.0.0.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fc08f0c563a8e047441e1ab1810cc181, clearElement {id=0662e609-214a-4e1e-96de-0248c7b38322}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Diana\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62560}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62560/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (fc08f0c563a8e047441e1ab1810cc181)] -&gt; css selector: [data-test-id='create-board-tile']]&#10;Session ID: fc08f0c563a8e047441e1ab1810cc181" type="org.openqa.selenium.InvalidElementStateException">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=103.0.5060.114)
 Build info: version: '4.2.2', revision: '683ccb65d6'
 System info: host: 'DESKTOP-B443DO6', ip: '10.0.0.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1a9059ecc09754ed289b5aea2f3b6897, clickElement {id=a4ad4a36-d1b7-4a5e-9dbc-8573bd8a002c}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Diana\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62218/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (1a9059ecc09754ed289b5aea2f3b6897)] -&gt; css selector: [href='/login']]
-Session ID: 1a9059ecc09754ed289b5aea2f3b6897
+Command: [fc08f0c563a8e047441e1ab1810cc181, clearElement {id=0662e609-214a-4e1e-96de-0248c7b38322}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Diana\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62560}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62560/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (fc08f0c563a8e047441e1ab1810cc181)] -&gt; css selector: [data-test-id='create-board-tile']]
+Session ID: fc08f0c563a8e047441e1ab1810cc181
 	at java.base@11.0.15.1/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base@11.0.15.1/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -23,20 +23,28 @@ Session ID: 1a9059ecc09754ed289b5aea2f3b6897
 	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
 	at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at app//manager.HelperBase.click(HelperBase.java:14)
-	at app//manager.UserHelper.login(UserHelper.java:39)
-	at app//manager.ApplicationManager.init(ApplicationManager.java:22)
-	at app//tests.TestBase.setUp(TestBase.java:14)
+	at app//org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:132)
+	at app//manage.HelperBase.type(HelperBase.java:20)
+	at app//manage.BoardHelper.fillboardCreationForm(BoardHelper.java:20)
+	at app//tests.BoardCreation.boardCreation1(BoardCreation.java:26)
 	at java.base@11.0.15.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.15.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base@11.0.15.1/java.lang.reflect.Method.invoke(Method.java:566)
 	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base@11.0.15.1/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at app//org.testng.TestRunner.run(TestRunner.java:601)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
 	at app//org.testng.SuiteRunner.run(SuiteRunner.java:330)
 	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -66,9 +74,6 @@ Session ID: 1a9059ecc09754ed289b5aea2f3b6897
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
-  </testcase>
-  <testcase name="loginPositive" classname="tests.Login" time="0.0">
-    <skipped/>
   </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
